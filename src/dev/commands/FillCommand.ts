@@ -1,5 +1,7 @@
 /// <reference path="../error/SyntaxError.ts" />
 
+// TODO: Make a fill command works
+/*
 const FILL_COMMAND = {
     cmdName: "//fill",
     callback: () => {
@@ -21,3 +23,4 @@ Callback.addCallback("NativeCommand", (cmd) => {
 
     FILL_COMMAND.callback();
 });
+*/
