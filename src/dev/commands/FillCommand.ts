@@ -1,11 +1,9 @@
 /// <reference path="../error/SyntaxError.ts" />
 
-// TODO: Make a fill command works
-/*
 const FILL_COMMAND = {
     cmdName: "//fill",
-    callback: () => {
-        Filler.fill();
+    callback: (id: ItemInstance) => {
+        Filler.fill(id)
     },
 };
 
@@ -16,11 +14,5 @@ Callback.addCallback("NativeCommand", (cmd) => {
         return;
     }
 
-    if (command[1] == "") {
-        Game.tipMessage(ErrorMessage.SyntaxError.fillCmdSyntaxError());
-        return;
-    }
-
-    FILL_COMMAND.callback();
+    FILL_COMMAND.callback(Player.getCarriedItem());
 });
-*/

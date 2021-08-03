@@ -18,7 +18,7 @@ Callback.addCallback("DestroyBlock", (coords, block: Tile) => {
     if (Player.getCarriedItem().id == Item.getNumericId(WAND.stringID)) {
         Selector.setPos2({ x, y, z });
 
-        World.setBlock(x, y, z, id, data);
+        BlockSource.getCurrentWorldGenRegion().setBlock(x, y, z, id, data);
         Game.tipMessage(
             Native.Color.GREEN + `Selected second position at ${x}, ${y}, ${z}`
         );
